@@ -1,4 +1,4 @@
-package com.jwt.auth.dto;
+package com.jwt.auth.dto.auth;
 
 public record TokenResponseDTO(
         String accessToken,

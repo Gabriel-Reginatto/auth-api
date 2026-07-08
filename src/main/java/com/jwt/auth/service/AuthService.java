@@ -2,7 +2,10 @@ package com.jwt.auth.service;
 
 import com.jwt.auth.domain.User;
 import com.jwt.auth.domain.UserRole;
-import com.jwt.auth.dto.*;
+import com.jwt.auth.dto.auth.AuthResponseDTO;
+import com.jwt.auth.dto.login.LoginRequestDTO;
+import com.jwt.auth.dto.register.RegisterRequestDTO;
+import com.jwt.auth.dto.register.RegisterResponseDTO;
 import com.jwt.auth.exception.ConflictException;
 import com.jwt.auth.mapper.UserMapper;
 import com.jwt.auth.repository.UserRepository;

@@ -1,4 +1,4 @@
-package com.jwt.auth.dto;
+package com.jwt.auth.dto.register;
 
 import java.time.Instant;
 import java.util.UUID;

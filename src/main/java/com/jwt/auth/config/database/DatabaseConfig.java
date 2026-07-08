@@ -1,4 +1,4 @@
-package com.jwt.auth.config;
+package com.jwt.auth.config.database;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

@@ -1,4 +1,4 @@
-package com.jwt.auth.controller;
+package com.jwt.auth.controller.test;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
