@@ -13,7 +13,7 @@ import java.time.Instant;
 import java.util.Map;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler{
 
     private ErrorResponse buildError(
             HttpStatus status,

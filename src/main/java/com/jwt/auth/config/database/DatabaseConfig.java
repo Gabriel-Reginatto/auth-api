@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DatabaseConfig {
 
+    private static final String POOL_NAME = "auth_api";
+
     @Value("${spring.datasource.url}")
     String url;
 
@@ -21,6 +23,8 @@ public class DatabaseConfig {
     @Value("${spring.datasource.driver-class-name}")
     String driver;
 
+    private DatabaseConfig() {}
+
     @Bean
     public HikariDataSource hikariDataSource() {
 
@@ -32,7 +36,7 @@ public class DatabaseConfig {
 
         config.setMaximumPoolSize(10);
         config.setMinimumIdle(1);
-        config.setPoolName("auth_api");
+        config.setPoolName(POOL_NAME);
         config.setMaxLifetime(600000);
         config.setConnectionTimeout(100000);
         config.setConnectionTestQuery("select 1");
